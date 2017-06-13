@@ -71,10 +71,17 @@ i { text-decoration: italic; display: inline; }
 
 > Когда на странице элементы ведут себя не так, как хочет автор, то сначала выясняют значения для свойства display.
 
-0. [Значения для CSS свойства display](http://htmlbook.ru/css/display)
-0. [Инлай-элементы](http://htmlbook.ru/html/type/inline)
-0. [Блок-элементы](http://htmlbook.ru/html/type/block)
+1. [Значения для CSS свойства display](http://htmlbook.ru/css/display)
+1. [Инлай-элементы](http://htmlbook.ru/html/type/inline)
+1. [Блок-элементы](http://htmlbook.ru/html/type/block)
 
 ***
 
 Это про тэги которые отображаются на странице
+
+
+<!--
+  Пригодится
+  - https://jsbin.com/zuhuve/1/edit?html,output
+  - http://tj.github.io/nib/
+-->

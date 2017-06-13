@@ -8,26 +8,30 @@
   <style>
     .container {
       background: grey;
-      width: 600px;
+      width: 400px;
       margin: 0 auto;
     }
 
     .left {
-      background: lightblue;
-      min-height: 50px;
-      width: 120px;
+      background: brown;
+      min-height: 30px;
+      width: 80px;
       float: left;
     }
 
     .center {
       background: pink;
-      margin: 0 240px 0 120px;
+      margin: 0 120px 0 80px;
+      /*
+      float: left;
+      width: 200px;
+      */
     }
 
     .right {
       background: green;
-      min-height: 50px;
-      width: 240px;
+      min-height: 30px;
+      width: 120px;
       float: right;
     }
 
@@ -44,28 +48,26 @@
       <a href="clear.html">link to normal clear</a>
     </div>
     <div class="center">
+      <!-- PROBLEM -->
+      <div style="background: black;">
+        <div style="background: lightyellow; float: left;">lft</div>
+        <div style="background: purple; float: right;">rght</div>
+        <div class="clearfix"></div>
+      </div>
+
       <p>
         Duis id erat quis lacus blandit ullamcorper vel auctor ligula.
         Integer vel orci tincidunt ipsum consectetur imperdiet nec ac ligula.
-        Pellentesque pharetra urna eros, tempor efficitur ipsum tempor eu.
-        Vivamus pellentesque ac risus at aliquet. Mauris id volutpat nulla.
-        Integer vitae tortor id diam tristique tincidunt.
       </p>
 
       <p>
         Interdum et malesuada fames ac ante ipsum primis in faucibus.
         Nullam sagittis rhoncus bibendum.
-        Nulla a sapien at leo hendrerit scelerisque.
-        Sed dignissim placerat dui, non tristique quam fringilla ut.
-        Aliquam malesuada, mi nec dignissim feugiat, neque diam venenatis nibh,
-        sed posuere ligula justo quis augue.
       </p>
 
       <p>
         Proin cursus arcu in euismod pharetra. Nunc varius massa risus,
         lobortis porttitor purus lobortis vel. Quisque at nibh enim.
-        In velit libero, interdum vel vulputate a, fringilla et quam.
-        Suspendisse ornare suscipit ex ac tincidunt.
       </p>
     </div>
     <div class="clearfix"></div>
