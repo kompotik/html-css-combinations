@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simple Clearfix</title>
+  <style>
+    .container {
+      background: grey;
+      width: 400px;
+      margin: 0 auto;
+    }
+    .left {
+      background: brown;
+      min-height: 30px;
+      width: 80px;
+      float: left;
+    }
+    .center {
+      background: pink;
+      float: left;
+      width: 200px;
+    }
+    .right {
+      background: green;
+      min-height: 30px;
+      width: 120px;
+      float: right;
+    }
+    .clearfix {
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">left-content</div>
+    <div class="right">
+      right-content<br>
+      <a href="clear.html">link to normal clear</a>
+    </div>
+    <div class="center">
+      <!-- PROBLEM -->
+      <div style="background: black;">
+        <div style="background: lightyellow; float: left;">lft</div>
+        <div style="background: purple; float: right;">rght</div>
+        <div class="clearfix"></div>
+      </div>
+
+      <p>
+        Duis id erat quis lacus blandit ullamcorper vel auctor ligula.
+        Integer vel orci tincidunt ipsum consectetur imperdiet nec ac ligula.
+      </p>
+
+      <p>
+        Interdum et malesuada fames ac ante ipsum primis in faucibus.
+        Nullam sagittis rhoncus bibendum.
+      </p>
+
+      <p>
+        Proin cursus arcu in euismod pharetra. Nunc varius massa risus,
+        lobortis porttitor purus lobortis vel. Quisque at nibh enim.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</body>
+</html>
