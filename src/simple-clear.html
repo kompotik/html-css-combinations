@@ -20,8 +20,9 @@
     }
 
     .center {
+      float: left;
       background: pink;
-      margin: 0 240px 0 120px;
+      width: 240px;
     }
 
     .right {
@@ -44,6 +45,11 @@
       <a href="clear.html">link to normal clear</a>
     </div>
     <div class="center">
+      <div style="background: black;">
+        <div style="background: lightyellow; float: left;">lft</div>
+        <div style="background: purple; float: right;">rght</div>
+        <div class="clearfix"></div>
+      </div>
       <p>
         Duis id erat quis lacus blandit ullamcorper vel auctor ligula.
         Integer vel orci tincidunt ipsum consectetur imperdiet nec ac ligula.
